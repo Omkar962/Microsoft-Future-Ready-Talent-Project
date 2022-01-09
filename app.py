@@ -2,6 +2,16 @@ import streamlit as st
 import pickle
 import numpy as np
 
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://techbords.com/wp-content/uploads/2020/10/Best-Laptops-For-Students.jpg")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # import the model
 pipe = pickle.load(open('pipe.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
